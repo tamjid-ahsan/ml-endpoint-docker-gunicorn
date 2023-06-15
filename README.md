@@ -60,3 +60,4 @@ ___
 - reduce deployment size
     - base image
     - modify packages and libraries
+- fix README
