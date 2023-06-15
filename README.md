@@ -3,7 +3,7 @@ Details coming soon
 
 # Instruction
 
-- build image from Dockerfile
+- build image from Docker file
 
 ``` bash
 docker build -t ml-model-churn .
