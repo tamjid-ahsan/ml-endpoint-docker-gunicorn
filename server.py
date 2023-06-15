@@ -2,17 +2,19 @@ from flask import Flask, jsonify, request
 import pandas as pd
 import joblib
 
-# import warnings filter
+###############################################################################
 from warnings import simplefilter
 # ignore all future warnings
 simplefilter(action='ignore', category=FutureWarning)
-simplefilter(action='ignore')
+###############################################################################
 
+###############################################################################
 debug = False
+###############################################################################
 
+###############################################################################
 # Imports & Functions
-# -------------------------------------------------------------------------
-
+###############################################################################
 preprocessor = joblib.load('./data/preprocessor.joblib')
 nume_col = joblib.load('./data/nume_col.joblib')
 cate_col = joblib.load('./data/cate_col.joblib')
@@ -26,8 +28,9 @@ def unseen_data_processor(X, preprocessor, nume_col, cate_col):
                           list(preprocessor.named_transformers_['cate_feat'].
                                named_steps['ohe'].get_feature_names(cate_col)))
     return ret_df
-# -------------------------------------------------------------------------
+###############################################################################
 
+###############################################################################
 app = Flask(__name__)
 
 @app.route("/predict", methods=['POST'])
@@ -45,6 +48,7 @@ def do_prediction():
         print(f'\nprediction: {str(prediction[0])}')
     result = {"Prediction" : str(prediction[0])}
     return jsonify(result)
+###############################################################################
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
