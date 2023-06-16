@@ -1,10 +1,7 @@
-# ml-endpoint-docker-nginx
+# ml-endpoint-docker-gunicorn README
 
-```Details coming soon```
+- creates docker image with `Flask` [<img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/120px-Flask_logo.svg.png" alt="Flasklogo" height="5%" width="5%" title="Flask">](https://github.com/pallets/flask) and `Gunicorn`[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Gunicorn_logo_2010.svg/120px-Gunicorn_logo_2010.svg.png" alt="Gunicorn" height="5%" width="5%" title="Flask">](https://github.com/benoitc/gunicorn) web framework to act as a API server. ML details is [available at](https://github.com/tamjid-ahsan/capstone_customer_churn).
 
-- creates docker image with `Flask` [<img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/120px-Flask_logo.svg.png" alt="Flasklogo" height="5%" width="5%" title="Flask">](https://github.com/pallets/flask) web framework to act as a API server.
-- not secure connection [HTTP] !!! 
-    - use `NGINX` [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/120px-Nginx_logo.svg.png" alt="NGINX" height="5%" width="5%">](https://hg.nginx.org/nginx) and `uWSGI` [<img src="https://www.fullstackpython.com/img/logos/uwsgi.png" alt="uWSGI" height="5%" width="5%">](https://github.com/unbit/uwsgi)
 
 # Instruction
 
@@ -31,6 +28,7 @@
     ```bash
     docker start <CONTAINER> # ml
     ```
+### usefull commands
 
 - list all running
 
@@ -56,7 +54,6 @@ ___
 
 # TODO:
 
-- add `nginx` and replace `gunicorn` with `UWSGI`
 - reduce deployment size
     - base image
     - modify packages and libraries
