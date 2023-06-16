@@ -58,3 +58,4 @@ ___
     - base image
     - modify packages and libraries
 - fix README
+- deploy to cloud to use in front-end WebApp built on JavaScript or TypeScript
