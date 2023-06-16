@@ -1,6 +1,6 @@
 # ml-endpoint-docker-gunicorn README
 
-- creates docker image with `Flask` [<img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/120px-Flask_logo.svg.png" alt="Flasklogo" height="5%" width="5%" title="Flask">](https://github.com/pallets/flask) and `Gunicorn`[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Gunicorn_logo_2010.svg/120px-Gunicorn_logo_2010.svg.png" alt="Gunicorn" height="5%" width="5%" title="Flask">](https://github.com/benoitc/gunicorn) web framework to act as a API server. ML details is [available at](https://github.com/tamjid-ahsan/capstone_customer_churn).
+- Create docker image with `Flask` [<img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/120px-Flask_logo.svg.png" alt="Flasklogo" height="5%" width="5%" title="Flask">](https://github.com/pallets/flask) and `Gunicorn`[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Gunicorn_logo_2010.svg/120px-Gunicorn_logo_2010.svg.png" alt="Gunicorn" height="5%" width="5%" title="Flask">](https://github.com/benoitc/gunicorn) web framework to act as a API server. ML details is [available at](https://github.com/tamjid-ahsan/capstone_customer_churn).
 
 
 # Instruction
